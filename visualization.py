@@ -2,6 +2,9 @@ import pygame
 import serial
 import math
 
+# Modify Detection Range (units in cm)
+detection_range = 15
+
 # Initialize Pygame
 pygame.init()
 
@@ -26,7 +29,6 @@ radius_step = 50
 num_circles = 6
 max_radius = radius_step * num_circles
 line_width = 2
-detection_range = 20
 range_factor = 300 / detection_range
 
 # Create a separate surface for the radar background
@@ -40,8 +42,10 @@ detected_objects = {}
 # Function to draw radar circles and lines on the background surface
 def draw_radar_background():
     for i in range(num_circles):
+        # Draw radar circles
         pygame.draw.arc(radar_background, GREEN, (center[0] - radius_step * (i+1), center[1] - radius_step * (i+1), radius_step * 2 * (i+1), radius_step * 2 * (i+1)), 0, math.radians(180), 1)
 
+        # add distance text
         range_text = font.render(str(round((i + 1) * (detection_range/num_circles),1)), True, GREEN)
         radar_background.blit(range_text, (center[0] + radius_step * (i+1) - 10, center[1] + 10))
         radar_background.blit(range_text, (center[0] - radius_step * (i+1) - 10, center[1] + 10))
