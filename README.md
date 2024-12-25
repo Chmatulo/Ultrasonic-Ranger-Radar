@@ -22,7 +22,7 @@ This project is a sonar system that utilizes an ultrasonic sensor and a servo mo
 
 • Distance Measurement: Use an ultrasonic sensor to measure the distance to nearby objects. <br>
 • Scanning: A servo motor rotates the sensor to scan the surroundings. <br>
-• Data Visualization: Display the detected distances in a visual radar-style graph. <br>
+• Data Visualization: Display the detected distances in a visual sonar-style graph. <br>
 • Multi-Language Support: C# for device control and Python for visualization. <br>
 
 ## Requirements
@@ -54,9 +54,9 @@ For this project, I've used the Grove Ecosystem, so all the hardware/software co
 The arduino communicates its recorded data through the COM3 serial port to the computer. <br>
 
 To start the program, upload the .ino script to the arduino and then close the IDE. Otherwise, the python script cannot read from the COM3 serial port as it is being used by an other program.
-Next, run the python script on your computer and a window with a radar interface should appear (note that there is a 2 seconds cooldown to setup the ultrasonic ranger at exactly 0 degrees).
+Next, run the python script on your computer and a window with a sonar interface should appear (note that there is a 2 seconds cooldown to setup the ultrasonic ranger at exactly 0 degrees).
 
-Finally, enjoy your radar.
+Finally, enjoy your sonar.
 
 ## Program
 
