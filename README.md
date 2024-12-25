@@ -1,21 +1,21 @@
-# Ultrasonic Ranger Radar
+# Ultrasonic Ranger Sonar
 
-This project is a radar system that utilizes an ultrasonic sensor and a servo motor to scan the surroundings. The radar system is controlled using C# and Python for data processing and visualization. The ultrasonic sensor measures the distance of objects, and the servo motor sweeps the sensor to create a 2D map of the environment using the pygame drawing library.
+This project is a sonar system that utilizes an ultrasonic sensor and a servo motor to scan the surroundings. The sonar system is controlled using C# and Python for data processing and visualization. The ultrasonic sensor measures the distance of objects, and the servo motor sweeps the sensor to create a 2D map of the environment using the pygame drawing library.
 
 <p align="center">
-  Radar Build IRL using LEGOS
+  Sonar Build IRL using LEGOS
 </p>
 
 <p align="center">
-  <img src="images/Radar_Build.jpg" style="width:500px;"/>
+  <img src="images/Sonar_Build.jpg" style="width:500px;"/>
 </p>
 
 <p align="center">
-  Radar Interface with detected object
+  Sonar Interface with detected object
 </p>
 
 <p align="center">
-  <img src="images/Ultrasonic_Ranger_Radar.png" style="width:500px;" />
+  <img src="images/Ultrasonic_Ranger_Sonar.png" style="width:500px;" />
 </p>
 
 ## Features
